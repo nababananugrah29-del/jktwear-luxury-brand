@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKTWear | The Billionaire Collection</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ====== CUSTOM CURSOR ====== -->
+    <div id="cursor-ring"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- ====== PRE-LOADER ====== -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">JKTWEAR</div>
+            <div class="preloader-line"></div>
+            <p class="preloader-sub">THE BILLIONAIRE COLLECTION</p>
+        </div>
+    </div>
+
+    <nav>
+        <div class="brand-logo">JKTWEAR</div>
+        <ul class="nav-links">
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#prive">Privé Access</a></li>
+        </ul>
+        <!-- Hamburger Icon (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- ====== MOBILE MENU OVERLAY ====== -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">CLOSE &times;</button>
+        <ul class="mobile-menu-links">
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#prive">Privé Access</a></li>
+        </ul>
+        <p class="mobile-menu-tag">EST. 2026 — BY INVITATION ONLY</p>
+    </div>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="hero-tag" style="letter-spacing: 0.4em; font-size: 0.7rem; margin-bottom: 20px; opacity: 0.6;">
+                EST. 2026</p>
+            <h1 class="hero-title" data-split>THE BILLIONAIRE<br>COLLECTION</h1>
+            <button class="btn-gold" id="btn-inquire">Inquire Access</button>
+        </div>
+    </section>
+
+    <!-- ====== VIP ACCESS MODAL ====== -->
+    <div id="access-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <p class="modal-tag">BY INVITATION ONLY</p>
+            <h2 class="modal-title">PRIVATE ACCESS</h2>
+            <div class="modal-divider"></div>
+            <form class="modal-form" id="modal-form">
+                <input type="text" class="modal-input" id="modal-code" placeholder="Enter Invitation Code"
+                    autocomplete="off" required>
+                <p class="modal-error" id="modal-error">Incorrect Access Code.</p>
+                <button type="submit" class="modal-submit">UNLOCK</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="philosophy" class="philosophy">
+        <h2 data-split>The Philosophy</h2>
+        <div class="divider-gold"></div>
+        <p>
+            "True luxury whispers. It does not shout. We craft armor for the modern titan who moves in silence.
+            <span>No logos. No noise.</span> Just absolute mastery of form."
+        </p>
+    </section>
+
+    <section id="collection" class="products-section">
+        <p class="section-header">Exclusive Drop 001</p>
+
+        <div class="grid-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1000&auto=format&fit=crop"
+                        alt="Obsidian Bomber">
+                </div>
+                <div class="product-info">
+                    <h3>Obsidian Bomber</h3>
+                    <p class="product-price">IDR 18.500.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=1000&auto=format&fit=crop"
+                        alt="Midnight Parka">
+                </div>
+                <div class="product-info">
+                    <h3>Midnight Parka</h3>
+                    <p class="product-price">IDR 24.200.000</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?q=80&w=1000&auto=format&fit=crop"
+                        alt="Onyx Tech Jacket">
+                </div>
+                <div class="product-info">
+                    <h3>Onyx Tech Jacket</h3>
+                    <p class="product-price">IDR 15.000.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quality-section">
+        <div class="quality-content">
+            <h2 data-split>THE SANCTUARY OF QUALITY</h2>
+            <p>
+                Each garment in the Billionaire Collection is crafted from hand-selected fibers sourced from the most
+                remote regions of the world.
+                Our production is capped at twelve units per design, ensuring that your silhouette remains as unique as
+                your portfolio.
+            </p>
+            <a href="#" class="btn-text-gold">REQUEST PRIVATE CATALOG</a>
+        </div>
+        <div class="quality-image-wrapper">
+            <img src="uploads/quality.jpg" alt="Quality Craftsmanship">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Concierge</h4>
+                <ul>
+                    <li><a href="#">Private Appointment</a></li>
+                    <li><a href="#">Sizing Consultation</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>The Brand</h4>
+                <ul>
+                    <li><a href="#">Heritage</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Stores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>JKTWEAR &copy; 2026. BY INVITATION ONLY.</p>
+        </div>
+    </footer>
+
+    <!-- ====== LIBRARIES ====== -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- SplitType (text splitting) -->
+    <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+
+    <!-- ====== MAIN SCRIPT ====== -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
